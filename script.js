@@ -1,12 +1,11 @@
 
 
-function findSeven(arr) {
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i].toString().includes('7')) {
-        return "Found!";
-      }
+function findSeven(num) {
+    let strNum = num.toString();
+    if (strNum.includes('7')) {
+      return "Found!";
     }
-    return "There is no 7 in the array";
+    return "There is no 7 in the number";
   }
 
 console.log(findSeven([99, 88, 66, 55, 44])); 
